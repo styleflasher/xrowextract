@@ -2,7 +2,6 @@
 
 // Include toolbox
 require_once ( "kernel/common/template.php" );
-require_once( 'kernel/common/i18n.php' );
 
 function applyOutputFilter( $tmp, $filtername )
 {
@@ -434,9 +433,9 @@ if ( $http->hasPostVariable( 'BrowseSubtree' ) )
 $Result = array();
 $Result['content'] = $tpl->fetch( "design:xrowextract/csv.tpl" );
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n('design/standard/xrowextract', 'Extract') ),
+                                'text' => ezpI18n::tr('design/standard/xrowextract', 'Extract') ),
                          array( 'url' => false,
-                                'text' => ezi18n('design/standard/xrowextract', 'CSV') )
+                                'text' => ezpI18n::tr('design/standard/xrowextract', 'CSV') )
                         );
 
 $Result['left_menu'] = 'design:xrowextract/menu.tpl';
