@@ -1,6 +1,6 @@
 <?php
 
-$Module = array('name' => 'Extract');
+$Module = array('name' => 'xrowextract');
 
 $ViewList = array();
 $ViewList['csv'] = array( 'script' => 'csv.php',

@@ -130,7 +130,7 @@ if ( $hasPreFilledData and $http->hasPostVariable( 'RemoveData' ) )
 {
     unset( $_SESSION['EXTRACTCSV_OBJECTID_ARRAY'] );
 
-    return $module->redirectTo( 'extract/csv' );
+    return $module->redirectTo( 'xrowextract/csv' );
 
 }
 $sessionConfig = $http->sessionVariable( 'eZExtractConfig' );
@@ -360,7 +360,7 @@ if ( $http->hasPostVariable( 'Download' ) )
    
         $datamap = $obj->attribute( 'data_map' );
 
-        #include_once( 'extension/extract/classes/parserinterface.php' );
+        #include_once( 'extension/xrowextract/classes/parserinterface.php' );
 		
         $first = true;
 
@@ -421,8 +421,8 @@ if ( $http->hasPostVariable( 'Download' ) )
 if ( $http->hasPostVariable( 'BrowseSubtree' ) )
 {
     $return = eZContentBrowse::browse( array( 'action_name' => 'ExtractionSubtree',
-                        'description_template' => 'design:extract/browse_node.tpl',
-                        'from_page' => '/extract/csv',
+                        'description_template' => 'design:xrowextract/browse_node.tpl',
+                        'from_page' => '/xrowextract/csv',
                         'persistent_data' => array( 'Subtree' => $Subtree,
                                         'Class_id' => $Class_id,
                                         'Attributes' => $Attributes,
@@ -432,13 +432,13 @@ if ( $http->hasPostVariable( 'BrowseSubtree' ) )
 }
 
 $Result = array();
-$Result['content'] = $tpl->fetch( "design:extract/csv.tpl" );
+$Result['content'] = $tpl->fetch( "design:xrowextract/csv.tpl" );
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n('design/standard/extract', 'Extract') ),
+                                'text' => ezi18n('design/standard/xrowextract', 'Extract') ),
                          array( 'url' => false,
-                                'text' => ezi18n('design/standard/extract', 'CSV') )
+                                'text' => ezi18n('design/standard/xrowextract', 'CSV') )
                         );
 
-$Result['left_menu'] = 'design:extract/menu.tpl';
+$Result['left_menu'] = 'design:xrowextract/menu.tpl';
 
 ?>

@@ -1,16 +1,16 @@
 <?php /* #?ini charset="utf8"?
 
-Part[ezextractnavigationpart]=Extract
+Part[ezextractnavigationpart]=xrowextract
 
 [TopAdminMenu]
-Tabs[]=extract
+Tabs[]=xrowextract
 
-[Topmenu_extract]
+[Topmenu_xrowextract]
 NavigationPartIdentifier=ezextractnavigationpart
 Name=Export
 Tooltip=Export CSV
 URL[]
-URL[default]=extract/csv
+URL[default]=xrowextract/csv
 Enabled[]
 Enabled[default]=true
 Enabled[browse]=false

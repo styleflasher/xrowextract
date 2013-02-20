@@ -1,6 +1,6 @@
 /*
     CSV Extract for eZ publish
-    Copyright (C) 2004-2007  xrow GbR, Hannover Germany
+    Copyright (C) 2004-20013  xrow GmbH, Hannover Germany
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,11 +16,8 @@
 Developed by
 Björn Dieding ( bjoern@xrow.de )
 
-Financed by
-Brian Atkin, FREECPD LIMITED http://www.freecpd.co.uk
-
-This extenstion delivers tools for extracting/exporting content object data to csv. It is part of the toolkit of FREECPD.
+This extenstion delivers tools for extracting/exporting content object data to csv.
 
 It comes with following modules/views
 
-extract/csv
+xrowextract/csv

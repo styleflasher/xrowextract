@@ -12,9 +12,9 @@ class extractInfo
     function info()
     {
         return array(
-            'Name' => "eZ Publish extract extension",
+            'Name' => "eZ Publish xrowextract extension",
             'Version' => "1.0",
-            'Copyright' => "Copyright (C) 2008 xrow GmbH",
+            'Copyright' => "Copyright (C) 2013 xrow GmbH",
             'Author' => "xrow GmbH",
             'License' => "GPL License" );
     }
