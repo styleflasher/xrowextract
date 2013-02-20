@@ -409,9 +409,16 @@ if ( $http->hasPostVariable( 'Download' ) )
         $data .= $row . $LineSeparatorArray[$LineSeparator]['value'];
         
     }
-    
+
     @unlink( $file );
+    
+    $file = explode('/', $file);
+    $file = array_reverse($file);
+    header('Content-Disposition: attachment; filename="'.$file[0].'"');
+    
     eZFile::create( $file, false, $data );
+
+eZExecution::cleanExit();
 
     if ( !eZFile::download( $file ) )
         $module->redirectTo( 'content/view/full/5' );
