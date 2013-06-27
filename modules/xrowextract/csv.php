@@ -1,8 +1,5 @@
 <?php
 
-// Include toolbox
-require_once ( "kernel/common/template.php" );
-
 function applyOutputFilter( $tmp, $filtername )
 {
     switch ( $filtername )
@@ -126,7 +123,7 @@ $http = eZHTTPTool::instance();
 // Access system variables
 $sys = eZSys::instance();
 // Init template behaviors
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 // Access ini variables
 $ini = eZINI::instance();
 $ini_bis = eZINI::instance( 'export.ini.append' );
