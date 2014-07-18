@@ -27,6 +27,7 @@ ExportableDatatypes[]=ezbinaryfile
 ExportableDatatypes[]=ezmatrix
 ExportableDatatypes[]=ezobjectrelationlist
 ExportableDatatypes[]=hmregexpline
+ExportableDatatypes[]=ezprice
 StripURLText=true
 
 # you can place the handler files in your extension
@@ -121,5 +122,9 @@ HandlerClass=eZObjectRelationListHandler
 [hmregexpline]
 HandlerFile=extension/xrowextract/classes/parsers/hmregexplinehandler.php
 HandlerClass=hmregexplineHandler
+
+[ezprice]
+HandlerFile=extension/xrowextract/classes/parsers/ezpricehandler.php
+HandlerClass=eZPriceHandler
 
 */ ?>
