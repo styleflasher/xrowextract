@@ -32,6 +32,13 @@ function applyOutputFilter( $tmp, $filtername )
             if ( $node )
                 $tmp = "http://" . eZINI::instance()->variable( 'SiteSettings', 'SiteURL' ) . '/' . $node->attribute( 'url_alias' );
             break;
+        case "state":
+            if($tmp){
+                $tmp="aktiviert";
+            }else{
+                $tmp="deaktiviert";
+            }
+            break;
         default:
             break;
     }
@@ -59,6 +66,13 @@ $ExtraAttributes = array(
         'name' => 'Password' , 
         'function' => 'fetch' 
     ) , 
+    'ezuser.is_enabled' => array(
+        'id' => 'ezuser.is_enabled' ,
+        'exportname' => 'user_status' ,
+        'name' => 'User Status' ,
+        'filter' => 'state' ,
+        'function' => 'fetch'
+    ) ,
     'ezcontentobject.published' => array( 
         'id' => 'ezcontentobject.published' , 
         'exportname' => 'published' , 
