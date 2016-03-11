@@ -100,19 +100,19 @@ HandlerFile=extension/xrowextract/classes/parsers/ezselectionhandler.php
 HandlerClass=eZSelectionHandler
 
 [ezimage]
-HandlerFile=ezimagehandler.php
+HandlerFile=extension/xrowextract/classes/parsers/ezimagehandler.php
 HandlerClass=ezImageExportHandler
 
 [ezmedia]
-HandlerFile=ezmediahandler.php
+HandlerFile=extension/xrowextract/classes/parsers/ezmediahandler.php
 HandlerClass=ezMediaExportHandler
 
 [ezbinaryfile]
-HandlerFile=ezbinaryfilehandler.php
+HandlerFile=extension/xrowextract/classes/parsers/ezbinaryfilehandler.php
 HandlerClass=ezBinaryfileExportHandler
 
 [ezmatrix]
-HandlerFile=ezmatrixhandler.php
+HandlerFile=extension/xrowextract/classes/parsers/ezmatrixhandler.php
 HandlerClass=ezMatrixExportHandler
 
 [ezobjectrelationlist]
