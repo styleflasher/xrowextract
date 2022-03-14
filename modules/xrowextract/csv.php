@@ -413,7 +413,9 @@ if ( $http->hasPostVariable( 'Download' ) )
                     $id = $obj->attribute( 'id' );
                     $tmp = new $matches[1]();
                     
-                    $tmp = $tmp->$ExtraAttributes[$dataelement['id']]['function']( $id );
+                    $functionName = $ExtraAttributes[$dataelement['id']]['function'];
+
+                    $tmp = $tmp->$functionName( $id );
                     
                     if ( array_key_exists( 'filter', $ExtraAttributes[$dataelement['id']] ) and $tmp->hasAttribute( $matches[2] ) )
                     {
